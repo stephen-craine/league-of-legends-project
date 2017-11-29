@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intialscale=1.0">
+    <title>League of Legends fanpage</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/xicon">
+    <link rel="stylesheet" href="../style.css"> <!-- for all common elements such as the top navigation -->
+    <link rel="stylesheet" href="otherstyle.css"> <!-- for elements of design common to pages other than the home page -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+    </script>
+  </head>
+
+<body>
+    <header>
+     <h1 class = "sticky">About LoL</h1> <!--sticky to keep the nav bar at the top of the page when scrolling -->
+      <div class="background"> <!--this empty div is in order to set the background image -->
+      </div>
+  </header>
+  <nav class="topnav sticky" id="myTopnav">
+  <ul class="sticky">
+    <li>
+      <a href="../index.html"> Home </a></li>
+    <li class="hide">
+      <a href="about.html"> About </a></li> <!-- see the CSS file, hide is so that these list elements are hidden inside the dropdown nav when the screen size is smaller -->
+    <li class="hide">
+      <a href="champions.html"> Champions </a></li>
+    <li class="hide">
+      <a href="esports.html"> eSports </a></li>
+    <li>
+      <a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a></li> <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  </ul>
+  </nav>
+
+
+<h2>
+  <strong>Background</strong> 
+</h2>
+<article class="aboutwrapper"> <!--flexbox wrapper -->
+  <p> 
+    League of Legends is a <abbr title="Multiplayer Online Battle Arena"> MOBA</abbr> featuring up to ten people in a game. With a steep learning curve, there are plenty of tutorials for beginners interested in picking it up. It is a free to play game, with some unlocks such as champions also free if enough time is put into the game. However in-game cosmetics called 'skins' are mainly paid (but can be acquired through random 'loot' drops over time).
+  </p>
+  <p>
+    In <abbr title="League of Legends">LoL</abbr> players assume the roles of champions whose purpose along with their team is to ultimately destroy the enemy nexus, which wins the game. However to do this, players must fight against enemy champions, neutral monsters, enemy minions and destroy enemy turrets and inhibitors.<em> See the link at the bottom of the page for more in depth information. </em>
+  </p>
+  <p> 
+    LoL has a very popular eSports showing, with tens of millions of people watching professional games, where the World Championship prize money totals well over a million dollars. Professional teams compete from all around the world in an <abbr title="League Championship Series">LCS</abbr> for their region, with the top tier teams competing internationally on the world stage. <em>See the link at the top of the page for the most recent eSports games</em>.
+  </p>
+
+</article>
+
+<h2>
+  <strong>LoL Game maps</strong>
+</h2>
+<article class="aboutwrapper">
+
+  <h4>Summoner's Rift</h4>
+  <p> 
+    Summoner's rift is the main map on which all professional play is seen. It involves a 5-player versus 5-player setup, within which are normally 5 set roles. The roles normally followed in the <abbr title="currrent popular trend">meta</abbr> are as follows: Top, Mid, Jungle, <abbr title="Attack Damage Carry">ADC</abbr> and Support. The map consists of three lanes. Minions which are neutral walk down these lanes and if left uninhibited will fight opposing lane minions. One champion, controlled by a player, will fight in top and mid lane. The ADC and support normally start in the bottom lane. Plus the jungler will spend most of the early game in the jungle fighting neutral monsters (which give buffs). Playstyle and pace is normally set by the jungler in the early game then the support later on. 
+  </p>
+  <p> 
+    There are many neutral objectives on the map and contesting these is what causes most of the fights to break out. The early game neutral objectives are buffs (which give a time-limited advantage to one champion) located in both sides of the jungle, plus the rift herald and dragon located in the river. In the late game, the Baron and Elder Drake are the main objectives which teams look to secure in order to finish the game as both of these give a whole team buff. 
+  </p>
+  <h4>Twisted treeline</h4>
+  <p>
+    The set up and aim is the same as on Summoner's rift, however now teams consists of 3 players and there are only two lanes with a jungle between. Games on this map are conisderably shorter however few players play on this map in comparison due to lack of support in the professional scene. 
+  </p>
+  <h4>Howling Abyss</h4>
+  <p>
+    This mode is very different as it is purely a casual mode (never ranked). It consists of a single lane and there are 5 players on each team. It is designed to encourage team fighting throughout as there are no neutral objectives and noone can return to base to buy items unless they die. As a result it is a very fast paced game which normally only lasts 20 minutes as opposed to a ranked summoner's rift game which can last anywhere from 15minutes (unanimous surrender) to over an hour in some cases, with the average being 40 minutes.
+  </p>
+</article>
+
+<h2>
+  <strong>LoL Special game modes</strong>
+</h2>
+
+<article class="aboutwrapper">
+  <p>
+    These League of Legends modes feature in an <abbr title="Random Game Mode">RGM</abbr> option every weekend and rotate between several types:
+  </p>
+  <ul class=aboutitem>
+    <li>
+      <strong>Ascension:</strong> This mode uses a featured map called Crystal Scar which focuses on champions fighting to maintain control of relics and fighting the neutral Xerath in the middle to 'ascend'.
+    </li>
+    <li>
+      <strong>Invasion:</strong> The newest game mode which features several unseen before maps and is a cooperative mode, in which players choose one of a select few champions to fight against enemy monsters.
+    </li>
+    <li>
+      <strong>Hexakill:</strong> This mode is the same as a normal 3v3 Twisted Treeline game, but features 6 players on each team, causing more mayhem.
+    </li>
+    <li>
+      <strong>One for All:</strong> As the name suggests, each team plays 5 of the same champion, leading to some interesting combinations.
+    </li>
+  </ul>
+
+</article>
+
+<h2 class="link"> 
+  For more background information click <a href="https://en.wikipedia.org/wiki/League_of_Legends" title="Wikipedia LoL" target="_blank"><strong>here</strong></a>.
+</h2>
+
+</body>
+</html>

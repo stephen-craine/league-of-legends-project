@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intialscale=1.0">
+    <title>League of Legends fanpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/xicon">  
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script>                                           
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }
+    </script>
+                <!-- This script was used from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp to help achieve a responsive navbar -->
+
+  </head>
+<body>
+<header>
+    <h1>
+        League of Legends 
+    </h1>
+
+    <nav class="topnav" id="myTopnav">
+        <ul> <!--top navigation options, Home does not have class hide so when viewing on a mobile Home is still visible and the rest are in a dropdown option -->
+            <li><a href="index.html"> Home </a></li>
+            <li class="hide"><a href="otherpages/about.html"> About </a></li>
+            <li class="hide"><a href="otherpages/champions.html"> Champions </a></li>
+            <li class="hide"><a href="otherpages/esports.html"> eSports </a></li>
+            <li><a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a></li> <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        </ul>
+    </nav>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="backgroundposter.jpg" class="fullscreen-bg__video">  <!-- https://slicejack.com/fullscreen-html5-video-background-css/ Also used https://clipchamp.com/en/transform to compress the video for better loading on a mobile as it still loads in the background.-->
+            <source src="backgroundvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</header>
+<section id="news"> <!--recent news added here. This will only show on a screen width below 721px in place of the video background -->
+    <h2>
+        Recent News
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SrJdYr8J8fY" allowfullscreen></iframe>
+    <p>
+        Preseason is almost here! This video details the new runes and masteries rework.
+    </p>
+</section>
+
+<div class="footer">    <!--This is the attribution requirement for using their images/material. https://www.riotgames.com/legal-jibber-jabber -->
+    This fan page isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc. 
+
+</div>
+
+
+</body>
+</html>

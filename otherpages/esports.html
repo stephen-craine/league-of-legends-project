@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intialscale=1.0">
+    <title>League of Legends fanpage</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/xicon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="otherstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1 class="sticky">eSports Videos</h1>
+      <div class="background">
+      </div>
+  
+  </header>
+  <nav class="topnav sticky" id="myTopnav">
+  <ul class="sticky">
+    <li>
+      <a href="../index.html"> Home </a></li>
+    <li class="hide">
+      <a href="about.html"> About </a></li> <!-- see the CSS file, hide is so that these list elements are hidden inside the dropdown nav when the screen size is smaller -->
+    <li class="hide">
+      <a href="champions.html"> Champions </a></li>
+    <li class="hide">
+      <a href="esports.html"> eSports </a></li>
+    <li>
+      <a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a></li> <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  </ul>
+  </nav>
+   <section>
+    <h2>Semi-finals</h2>
+    <div class="flex-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZifwLb3qUk"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/z_nWFpYQJl0"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9itEwCKY_Mc"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yIQAgiBx5FY"  allowfullscreen></iframe>
+    </div>
+   </section>
+
+   <section>
+    <h2>Finals</h2>
+    <div class="flex-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mYx8yhUjco0"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/y5i4zx-Ubi4"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rEvT0CLFkdI"  allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9jHG15agUU4"  allowfullscreen></iframe>
+    </div>
+  </section>
+  </body>
+  </html>

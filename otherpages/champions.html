@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intialscale=1.0">
+    <title>League of Legends fanpage</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/xicon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="otherstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    </script>
+
+  </head>
+
+<body>
+   <header>
+      <h1>Champions </h1>
+      <div class="background">
+      </div>
+ 
+  </header>
+  <nav class="topnav sticky" id="myTopnav">
+  <ul class="sticky">
+    <li>
+      <a href="../index.html"> Home </a></li>
+    <li class="hide">
+      <a href="about.html"> About </a></li> <!-- see the CSS file, hide is so that these list elements are hidden inside the dropdown nav when the screen size is smaller -->
+    <li class="hide">
+      <a href="champions.html"> Champions </a></li>
+    <li class="hide">
+      <a href="esports.html"> eSports </a></li>
+    <li>
+      <a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a></li> <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  </ul>
+  </nav>
+  <section>
+    <h2> <em> Mid lane </em> </h2>  <!-- list of mid lane champions -->
+    <div class="flex-wrapper">
+      <div class ="flex-item"> 
+        <img class ="champimage" src="images/Ahri.jpg" alt="Ahri"> <!--this class champimage is used to center the image -->
+        <div class="dropdown">   <!--this div is after the image to stop the whole flex item becoming a hover link. Used help from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+        <h3><button class="dropbtn">Ahri</button></h3>
+        <p class="dropdown-content">
+          Ahri is a mage who specialises in charming her opponents in order to land her burst damage. Highly mobile with decent damage per second, excellent at roaming around the map.
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage" src="images/Annie.jpg" alt="Annie">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Annie</button></h3>
+        <p class="dropdown-content">
+          Annie is a burst mage who is exceedingly simple but effective at what she does. Her burst is mostly as an area of effect making her an excellent teamfight champion.
+        </p>
+        </div>
+      </div>    
+      <div class ="flex-item">
+        <img class="champimage" src="images/Akali.jpg" alt="Akali">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Akali</button></h3>
+        <p class="dropdown-content">
+          Akali can build differently but normally functions as an assassin, with high burst and if she gets kills or assists can easily snowball teamfights in her favour. 
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage" src="images/Anivia.jpg" alt="Anivia">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Anivia</button></h3>
+        <p class="dropdown-content">
+        Anivia is a control mage who specialises in area of effect crowd control spells, altering the terrain in her favour. She is immobile so very susceptible to ganks, but she excels in teamfights. 
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage" src="images/Azir.jpg" alt="Azir">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Azir</button></h3>
+        <p class="dropdown-content">
+          Azir is not a burst mage, but rather a consistent damage per second champion. He uses soldiers rather than himself to do all his damage, which requires a very high skill to position effectively.
+        </p>
+        </div>
+       </div>
+      <div class ="flex-item">
+        <img class="champimage" src="images/Brand.jpg" alt="Brand">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Brand</button></h3>
+        <p class="dropdown-content">
+          Brand is similar to Annie but his abilities are mostly skill shots, which means that he does slightly higher damage but requires more skill and better positioning to play well.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+   <h2> <em> Top lane </em> </h2>  <!-- list of top lane champions -->
+   <div class="flex-wrapper">
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Chogath.jpg" alt="Chogath">
+        <div class="dropdown">   <!--this div is after the image to stop the whole flex item becoming a hover link. Used help from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+        <h3><button class="dropbtn">Cho'gath</button></h3>
+        <p class="dropdown-content">
+          Cho'gath is a front line tank but he can also deal high damage to squishy targets due to his health scaling ultimate that deals true damage. Easy to play, hard to master, but very strong in the current meta.
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Darius.jpg" alt="Darius">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Darius</button></h3>
+        <p class="dropdown-content">
+          Darius is a bruiser, he can take a lot of damage but also deal it as well. He is very strong vs. melee opponents but like similar champions, he is very susceptible to kiting by enemies.
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Mundo.jpg" alt="Mundo">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Dr. Mundo</button></h3>
+        <p class="dropdown-content">
+          Dr. Mundo is a tank, similar to Cho'gath. He can deal a lot of damage if he gets in range of a squishy target with his percentage based poke and his area of effect constant damage. He is a very effective frontline champion who is strong in teamfights.
+        </p>
+        </div>
+      </div>      
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Fiora.jpg" alt="Fiora">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Fiora</button></h3>
+        <p class="dropdown-content">
+          Fiora is a duelist. She can beat any champion in a 1 versus 1 if she is in the hands of a skilled player. She is strong at splitpushing but due to her difficult mechanics, she is difficult to play in a team fight.
+        </p>
+        </div>
+      </div> 
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Gangplank.jpg" alt="Gangplank">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Ganglank</button></h3>
+        <p class="dropdown-content">
+          Gangplank is a fighter. He is weak in the early stages of the game and can always be burst down, but he has very high damage in the late game, with a powerful teamfighting global ultimate that can make or break his game.
+        </p>
+        </div>
+      </div>     
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Garen.jpg" alt="Garen">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Garen</button></h3>
+        <p class="dropdown-content">
+          Garen, similar to Dr. Mundo is a tank, but can beat most champions in a 1 versus 1 due to his high base damage and percentage health ultimate, which deal true damage to his 'villain'.
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section>
+   <h2> <em> Jungle </em> </h2>  <!-- list of jungle champions -->
+   <div class="flex-wrapper">
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Evelynn.jpg" alt="Evelynn">
+        <div class="dropdown">   <!--this div is after the image to stop the whole flex item becoming a hover link. Used help from https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+        <h3><button class="dropbtn">Evelynn</button></h3>
+        <p class="dropdown-content">
+          Evelynn has been recently reworked. She functions as a high burst damage assassin who is camouflaged most of the time which means her mid game is exceptionally strong.
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Fiddlesticks.jpg" alt="Fiddlesticks">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Fiddlesticks</button></h3>
+        <p class="dropdown-content">
+          Fiddlesticks is an area of effect burst mage. He has high crowd control and a very high damage ultimate which can win a teamfight. However he is immobile and needs to position perfectly to dish out his high damage.
+        </p>
+        </div>
+      </div>
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Gragas.jpg" alt="Gragas">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Gragas</button></h3>
+        <p class="dropdown-content">
+          Gragas is a tanky magic damage champion. He has high crowd control and is very good at ganking lanes. He is relatively simple to pick up apart from having a difficult to land ultimate. Very strong in the professional scene but not seen as much in solo queue due to his high skill ceiling.
+        </p>
+        </div>
+      </div>      
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Graves.jpg" alt="Graves">
+        <div class="dropdown">  
+        <h3><button class="dropbtn">Graves</button></h3>
+        <p class="dropdown-content">
+          Graves is a marksman who is primarily played in the jungle. He has very high burst damage and is relatively tanky. He is hard to master and due to a lot of nerfs is not seen as much anymore. However, he is fun to use in certain team compositions.
+        </p>
+        </div>
+      </div> 
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Hecarim.jpg" alt="Hecarim">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Hecarim</button></h3>
+        <p class="dropdown-content">
+          Hecarim is a very mobile fighter. He has a great ganking and teamfight presence. However due to his relatively weak mid game, he is weak in the current meta. He is a simple but effective champion to use.
+        </p>
+        </div>
+      </div>     
+      <div class ="flex-item">
+        <img class="champimage"  src="images/Jarvan.jpg" alt="Jarvan IV">
+        <div class="dropdown">   
+        <h3><button class="dropbtn">Jarvan IV</button></h3>
+        <p class="dropdown-content">
+          Extremely popular in the current meta and in the professional scene, Jarvan is picked a lot at the moment due to his high mobility and his flexible build path. He can build damage to kill squishy targets or build tank to act as a frontline to peel for his carries.
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+  </body>
+  </html>
